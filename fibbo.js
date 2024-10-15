@@ -9,7 +9,9 @@ function fibonacci(num) {
     let prox = a + b;
 
     while (prox <= num) {
-        prox === num ? true: 
+        if (prox === num) {
+            return true;
+        }
         
         a = b;
         b = prox;
